@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Carrossel Quebrando</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+            font-family: Arial, sans-serif;
+        }
+
+        .secao-principal {
+            margin: 40px 60px;
+            min-width: 200px;
+            overflow-x: hidden; /* Garante que nada vaze */
+        }
+
+        .carrosel-secao {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carrosel-livro {
+            width: 100%;
+            min-width: 500px;   /* Aqui você controla o valor mínimo */
+            display: flex;
+            flex-wrap: wrap;    /* Permite quebrar os itens */
+            gap: 20px;
+            margin-top: 40px;
+            box-sizing: border-box;
+        }
+
+        .livro-span {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 200px; /* Faz cada item ter no mínimo 200px e quebrar se necessário */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .livro-span-subtitulo {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="secao-principal">
+        <div class="carrosel-secao">
+            <div class="carrosel-livro">
+                <div class="livro-span">
+                    <span>Livro 1</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+                <div class="livro-span">
+                    <span>Livro 2</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+                <div class="livro-span">
+                    <span>Livro 3</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+                <div class="livro-span">
+                    <span>Livro 4</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+                <div class="livro-span">
+                    <span>Livro 5</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+                <div class="livro-span">
+                    <span>Livro 6</span>
+                    <span class="livro-span-subtitulo">Subtítulo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

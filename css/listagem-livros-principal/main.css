@@ -1,0 +1,34 @@
+@import url(../global/variaveis.css);
+
+.secao-principal {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-right: 60px;
+    min-width: 200px;
+}
+
+.carrosel-secao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrosel-livro {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.livro-span {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.livro-span-subtitulo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--subtitulo);
+}
