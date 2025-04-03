@@ -1,13 +1,11 @@
 @import url(../global/variaveis.css);
 
-
 .inscricao {
     margin-top: 60px;
     margin-left: 60px;
     margin-right: 60px;
     background-color: var(--fourth-color);
     padding: 15px;
-    
 }
 
 .mensagem {
@@ -19,7 +17,6 @@
     font-size: 16px;
     font-weight: 400;
     color: rgb(41, 71, 61);
-
 }
 
 .mensagem h3 {
@@ -69,7 +66,7 @@
 
 .checkbox {
     appearance: auto;
-    background-color: white; 
+    background-color: white;
 }
 
 .politica {
@@ -100,4 +97,31 @@
 
 .inscricao a {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .inscricao {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: var(--fourth-color);
+        padding: 45px 15px 15px 15px;
+    }
+
+    .mensagem {
+        display: block;
+    }
+
+    .mensagem h3 {
+        text-align: center;
+    }
+
+    .email {
+        display: block;
+    }
+
+    .botao, .politica span, .checkbox {
+        display: none;
+    }
 }

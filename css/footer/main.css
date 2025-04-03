@@ -33,3 +33,53 @@ footer {
     font-weight: 400;
     color: rgb(244, 241, 240);
 }
+
+.redes-sociais {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: start;
+    margin-right: 80px
+}
+
+.redes-sociais img {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: 100%;
+        margin: auto;
+        margin-left: 0px;
+        background-color: var(--primary-color);
+        padding: 2px 0px 0px 15px;
+        display: block;
+    }
+
+    .footer-column {
+        justify-content: start;
+        color: white;
+        margin-right: 120px;
+    }
+
+    .footer-column span {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .redes-sociais {
+        display: flex;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .redes-sociais img {
+        margin-bottom: 10px;
+    }
+}
